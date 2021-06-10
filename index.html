@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venom 2 - сайт о фильме</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="1.js"></script>
+</head>
+<body>
+    <div id="scene" class="blood">
+        <div data-depth="0.05">
+            <img src="img/blood.png" alt="img: blood">
+        </div>
+    </div>
+    <div class="conteiner container-index">
+        <!--Верхняя шапка-->
+        <header class="header">
+            <!-- Ссылка на главную страницу с логотипом-->
+            <a href="#" class="logo-link">
+                <img width="46" height="71" src="img/logo.png" alt="logo: venom" class="logo-img">
+            </a>
+            <!-- Навигационное меню-->
+            <nav class="nav">
+                <!--Список-->
+                <ul class="nav-menu">
+                    <!--Элементы списка-->
+                    <li class="nav-menu-item">
+                        <!--Каждый пункт в меню это ссылка-->
+                        <a href="about.html" class="nav-menu-link">о фильме</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <!--Каждый пункт в меню это ссылка-->
+                        <a href="#" class="nav-menu-link">трейлер</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <!--Каждый пункт в меню это ссылка-->
+                        <a href="#" class="nav-menu-link">актеры</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <!--Каждый пункт в меню это ссылка-->
+                        <a href="#" class="nav-menu-link">премьера</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--Информация о фильме-->
+        <div class="film">
+            <div class="film-text">
+                <span class="film-date">16 сентября 2021</span>
+                <img src="img/venom-2.svg" alt="venom" class="film-logo">
+                <p class="film-description">
+                    В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из
+                    комиксов Marvel.</p>
+            </div>
+        </div>
+        <!--Группа с кнопками-->
+        <div class="button-group">
+            <button class="button button-primary">
+                <img width="15" src="img/play.svg" alt="button-icon" class="button-img">
+                <span class="button-text">смотреть трейлер</span>
+            </button>
+            <a href="#" class="button button-link">
+                <img width="15" src="img/ticket.svg" alt="icon: ticket" class="button-img">
+                <span class="button-text">билеты на премьеру</span>
+            </a>
+        </div>
+    </div>
+    <img src="img/venom.png" alt="img: venom" class="venom">
+</body>
+</html>

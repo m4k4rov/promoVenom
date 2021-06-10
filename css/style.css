@@ -1,0 +1,186 @@
+﻿body {
+    color: #fff; /*Цвет текста*/
+    font-family: "Roboto", sans-serif; /* Шрифт на странице*/
+    background: #14131a url("../img/background.jpg") no-repeat center/100%; /*Картинка для заднего фона, не повторяется и расположена сверху справа
+                                                                        Вторая картинка занимает 100% ширины и имеет фон где нет картинки*/
+}
+.conteiner {
+    max-width: 1140px; /*Ограничили шапку длинной 1140п*/
+    margin: auto; /* Выровняли шапку по центру*/
+}
+.container-index {
+    height: 699px;
+}
+/* Нав меню*/
+.header {
+    position: sticky;
+    top: 0;
+    display: flex; /*Лого и меню распологаем в одну строку*/
+    align-items: center; /* Элементы располагаются по центру*/
+    margin-top: 40px; /*Отступ от верха страницы*/
+    margin-bottom: 80px; /*Отступ снизу*/
+}
+.logo-link {
+    display: inline-block; /*Занимает места столько, сколько и сам логотип*/
+    margin-right: 50px; /*Отступ от логотипа в 50п*/
+}
+.nav-menu {
+    margin: 0; /* Внешние отступы*/
+    padding: 0; /* Внутренний отступ*/
+    list-style: none; /* Убираем точки в списке*/
+    display: flex; /*Располагаем элементы списка в одну строку*/
+}
+.nav-menu-item {
+    margin-right: 30px; /*Отступ в меню навигазии 30п справа у каждого элемента*/
+}
+.nav-menu-link {
+    text-decoration: none; /* Убираем подчеркивание ссылок*/
+    color: rgba(255, 255, 255, 0.5);
+}
+/*Секция о фильме*/
+.film-date {
+    display: block; /*Делаем блок дта блочным, для переноса строки*/
+    font-size: 24px;
+    line-height: 28px; /* Межстрочный интервал*/
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 38px;
+}
+.film-description {
+    margin-top: 40px;
+    max-width: 423px;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+}
+/*Секция кнопок*/
+.button {
+    padding: 15px 30px; /*Внутренние отступы сверху/снизу 15п, по краям 30п*/
+    border: none; /*Отключение обводки кнопки*/
+    border-radius: 5px; /*Скругление углов кнопки*/
+    text-decoration: none; /*Убираем подчеркивание у ссылок*/
+    cursor: pointer; /*Меняет курсор на палец*/
+}
+.button-img,
+.button-text {
+    display: inline-block;
+    vertical-align: middle; /*выравниваем иконку с текстом по вертикале*/
+}
+.button-text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+.button-primary {
+    color: #8d0019;
+    background-color: #fff;
+}
+.button-link {
+    color: #fff;
+}
+.button-group {
+    margin-top: 70px;
+}
+.venom {
+    position: absolute; /*Абсолютное позиционирование*/
+    top: 0;
+    right: 0;
+}
+.blood {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: -1;
+}
+.blood-ab {
+    position: absolute;
+    left: -30px;
+    top: -20px;
+}
+.bloodimg {
+    margin-top: 60px;
+    margin-left: 5px;
+}
+
+/*Страница О фильме*/
+.content {
+    display: flex;
+}
+.col {
+    flex-basis: 50%; /*Каждая из колонок занимает по половине контента*/
+}
+.content-title {
+    font-size: 36px;
+    line-height: 42px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 21px;
+    margin-top: 0;
+}
+.content-text {
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 423px;
+    min-width: 423px;
+    margin-bottom: 30px;
+}
+.content-sub {
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.content .list {
+    margin: 0; /* Внешние отступы*/
+    padding: 0; /* Внутренний отступ*/
+    list-style: none;
+}
+.list-item {
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+}
+.column-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; /*Делит список на две колонки*/
+    column-gap: 20px; /*Расстояние между колонками*/
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    max-width: 350px;
+}
+.content .trailer {
+    width: 356px;
+    height: 205px;
+    background: url(../img/trailer-cover.jpg) no-repeat center/100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*Выравнивает кнопку ровно по середине*/
+    margin-top: 33px;
+}
+.trailer .play {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+.poster-wrap {
+    display: flex;
+    position: relative;
+}
+.poster {
+    width: 362px;
+    height: 543px;
+    border-radius: 5px;
+    margin-right: 0;
+}
+.poster-wrap .list {
+    margin-bottom: 20px;
+    min-width: 109px;
+}
+.poster-wrap .content-sub {
+    margin-bottom: 5px;
+}
