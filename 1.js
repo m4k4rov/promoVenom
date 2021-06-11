@@ -5,9 +5,7 @@ new Promise(function(resolve,reject){
     document.head.append(script);
 }).then(script=>{
     var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene, {
-    relativeInput: true
-});
+    var parallaxInstance = new Parallax(scene);
 })
 
 
