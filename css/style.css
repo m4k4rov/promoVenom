@@ -8,6 +8,13 @@
     max-width: 1140px; /*Ограничили шапку длинной 1140п*/
     margin: auto; /* Выровняли шапку по центру*/
 }
+.venom {
+    position: absolute; /*Абсолютное позиционирование*/
+    top: 0;
+    right: 0;
+    max-width: 728px;
+    width: 55%;
+}
 .container-index {
     height: 699px;
 }
@@ -80,11 +87,7 @@
 .button-group {
     margin-top: 70px;
 }
-.venom {
-    position: absolute; /*Абсолютное позиционирование*/
-    top: 0;
-    right: 0;
-}
+
 .blood {
     position: absolute;
     top: 20px;
