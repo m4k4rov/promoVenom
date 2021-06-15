@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="1.js"></script>
+    <script src="./js/1.js"></script>
 </head>
-<body class="primary-bg">
+<body >
     <div class="conteiner">
         <!--Верхняя шапка-->
         <header class="header">
@@ -19,6 +19,15 @@
             <a href="./index.html" class="logo-link">  
                 <img width="46" height="71" src="img/logo.png" alt="logo: venom" class="logo-img">
             </a>
+            <!--Меню для маленьких экранов-->
+            <button class="menu-button">
+                <span class="menu-button-text">menu</span>
+                <img src="./img/menu.svg" alt="icon: burger-menu" class="menu-button-icon">
+            </button>
+            <button class="menu-close">
+                <span class="menu-close-text">закрыть</span>
+                <img src="./img/arrow.svg" alt="icon: arrow" class="menu-close-icon">
+            </button>
             <!-- Навигационное меню-->
             <nav class="nav">
                 <!--Список-->
@@ -63,19 +72,19 @@
                     <li class="list-item">Пегги Лу</li>
                 </ul>
                 <div class="trailer">
-                    <button class="play">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=kOF4p_bCLJs" class="play">
                         <img src="./img/play.svg" alt="icon: play" class="play-icon">
-                    </button>
+                    </a>
                 </div>
             </div>
             <!--Правая колонка-->
             <div class="col poster-wrap">
                 <div id="scene" class="blood-ab">
-                    <div data-depth="0.02" class="posterimg">
+                    <div data-depth="0.8" class="posterimg">
                         <img src="./img/poster.jpg" alt="poster" class="poster">
                     </div>
-                    <div data-depth="0.06" class="bloodimg">
-                        <img width="350px" src="img/blood.png" alt="img: blood" >
+                    <div data-depth="1" class="bloodimg">
+                        <img src="img/blood.png" alt="img: blood" class="blood-poster">
                     </div>
                 </div>
                 <div class="poster"></div>
@@ -99,6 +108,9 @@
             </div>
         </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
                                                                         Вторая картинка занимает 100% ширины и имеет фон где нет картинки*/
 }
 .conteiner {
-    max-width: 1140px; /*Ограничили шапку длинной 1140п*/
+    width: 90%;
     margin: auto; /* Выровняли шапку по центру*/
 }
 .venom {
@@ -14,14 +14,13 @@
     right: 0;
     max-width: 728px;
     width: 55%;
+    transition: top 1s;
 }
 .container-index {
     height: 699px;
 }
 /* Нав меню*/
 .header {
-    position: sticky;
-    top: 0;
     display: flex; /*Лого и меню распологаем в одну строку*/
     align-items: center; /* Элементы располагаются по центру*/
     margin-top: 40px; /*Отступ от верха страницы*/
@@ -50,14 +49,17 @@
     font-size: 24px;
     line-height: 28px; /* Межстрочный интервал*/
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 38px;
+    margin-bottom: 2%;
 }
 .film-description {
-    margin-top: 40px;
+    margin-top: 3%;
     max-width: 423px;
     font-size: 16px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8);
+}
+.film-logo {
+    width: 70%;
 }
 /*Секция кнопок*/
 .button {
@@ -85,7 +87,7 @@
     color: #fff;
 }
 .button-group {
-    margin-top: 70px;
+    margin-top: 5%;
 }
 
 .blood {
@@ -123,7 +125,7 @@
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8);
     max-width: 423px;
-    min-width: 423px;
+
     margin-bottom: 30px;
 }
 .content-sub {
@@ -163,12 +165,17 @@
     margin-top: 33px;
 }
 .trailer .play {
-    width: 45px;
-    height: 45px;
+    width: 22px;
+    height: 22px;
     border-radius: 50px;
     border: none;
-    padding: 15px;
+    padding: 16px;
     cursor: pointer;
+    background-color: #fff;
+}
+.play-icon {
+    padding-left: 4px;
+    padding-top: 2px;
 }
 .poster-wrap {
     display: flex;
@@ -186,4 +193,148 @@
 }
 .poster-wrap .content-sub {
     margin-bottom: 5px;
+}
+.menu-button {
+    display: none;
+}
+.menu-close {
+    display: none;
+}
+.blood-poster {
+    width: 350px;
+}
+@media (max-width: 768px) {
+    body {
+        background: #14131a;
+    }
+    .blood {
+        right: 0;
+    }
+    .venom {
+        top: 13%;
+        width: 50%;
+    }
+    /*html {
+        overflow: hidden;
+    }*/
+}
+@media (max-width: 576px) {
+    .nav-menu {
+        /* display: none;*/
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+    }
+    .nav-menu-item {
+        margin-top: 2%;
+        margin-right: 0;
+    }
+    .menu-close {
+        position: fixed;
+        opacity: 0;
+        right: 25px;
+        top: 65px;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        transform: translateX(300%);
+        transition: transform 0.2s;
+        transition-delay: 0.2s;
+    }
+    .is-active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .menu-close-text {
+        margin-right: 10px;
+    }
+    .nav-menu-link {
+        color: #14131a;
+        margin-bottom: 3%;
+    }
+    .nav {
+        margin-left: auto;
+    }
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background-color: #14131a;
+        color: #fff;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    .menu-button-text {
+        margin-right: 11px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    /*переносит на другую строку и центрируем*/
+    .button-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .poster-wrap {
+        position: relative;
+        flex-direction: column;
+    }
+    .poster,
+    .blood-poster {
+        max-width: 350px;
+        margin-bottom: 4%;
+        margin-right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .film-description {
+        width: 80%;
+    }
+    .content .trailer {
+        max-width: 350px;
+        width: 100%;
+    }
+    .column-2 {
+        column-count: 1;
+    }
+    .blood-ab {
+        left: 0;
+        top: 0;
+    }
+    .creators {
+        margin-top: 543px;
+    }
+    .header {
+    }
+}
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .col {
+        margin-bottom: 5%;
+    }
+    .header {
+        margin-bottom: 4%;
+    }
+    .film {
+        margin-top: 10%;
+    }
 }
