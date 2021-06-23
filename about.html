@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +12,16 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="./js/1.js"></script>
 </head>
-<body >
+
+<body>
     <div class="conteiner">
         <!--Верхняя шапка-->
         <header class="header">
             <!-- Ссылка на главную страницу с логотипом-->
-            <a href="./index.html" class="logo-link">  
+            <a href="./index.html" class="logo-link">
                 <img width="46" height="71" src="img/logo.png" alt="logo: venom" class="logo-img">
             </a>
-            
+
             <!-- Навигационное меню-->
             <nav class="nav">
                 <!--Меню для маленьких экранов-->
@@ -33,22 +35,23 @@
                 </button>
                 <!--Список-->
                 <ul class="nav-menu">
-                    <!--Элементы списка-->   
+                    <!--Элементы списка-->
                     <li class="nav-menu-item">
                         <!--Каждый пункт в меню это ссылка-->
                         <a href="about.html" class="nav-menu-link">о фильме</a>
                     </li>
                     <li class="nav-menu-item">
                         <!--Каждый пункт в меню это ссылка-->
-                        <a href="#" class="nav-menu-link">трейлер</a>
+                        <a data-fancybox href="https://www.youtube.com/watch?v=kOF4p_bCLJs"
+                            class="nav-menu-link">трейлер</a>
                     </li>
                     <li class="nav-menu-item">
                         <!--Каждый пункт в меню это ссылка-->
-                        <a href="#" class="nav-menu-link">актеры</a>
+                        <a href="#" class="nav-menu-link"> <del>актеры</del> </a>
                     </li>
                     <li class="nav-menu-item">
                         <!--Каждый пункт в меню это ссылка-->
-                        <a href="#" class="nav-menu-link">премьера</a>
+                        <a href="#" class="nav-menu-link"> <del>премьера</del> </a>
                     </li>
                 </ul>
             </nav>
@@ -58,7 +61,8 @@
             <!--Левая колонка-->
             <div class="col">
                 <h2 class="content-title">О фильме</h2>
-                <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
+                <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе
+                    обаятельного суперзлодея из комиксов Marvel.</p>
                 <h3 class="content-sub">В главных ролях</h3>
                 <ul class="list column-2">
                     <li class="list-item">Том Харди</li>
@@ -109,9 +113,53 @@
             </div>
         </div>
     </div>
+    <div class="hide-form">
+        <button class="order-trigger">
+            - И куда едем?
+        </button>
+        <div class="order-ticket">
+            <form class="order-ticket__form">
+                <fieldset class="order-ticket__form-wrapper">
+                    <legend class="order-ticket__title">Заполните форму</legend>
+                    <small class="order-ticket__description">Это прототип формы для отправки ваших данных
+                        администратору</small>
+                    <label class="order-ticket__label">
+                        <input type="text" class="order-ticket__input" required name="name">
+                        <span class="order-ticket__label-text">Имя</span>
+                    </label>
+                    <label class="order-ticket__label">
+                        <input type="text" class="order-ticket__input" name="surname">
+                        <span class="order-ticket__label-text">Фамилия</span>
+                    </label>
+                    <label class="order-ticket__label">
+                        <input type="text" class="order-ticket__input" required name="city">
+                        <span class="order-ticket__label-text">Город</span>
+                    </label>
+                    <label class="order-ticket__label">
+                        <input type="email" class="order-ticket__input" required name="mail">
+                        <span class="order-ticket__label-text">e-mail</span>
+                    </label>
+                    <label class="order-ticket__label">
+                        <input type="checkbox" class="order-ticket__checkbox" required name="personal">
+                        <span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a> персональных
+                                данных</a></span>
+                    </label>
+                    <button>Отправить</button>
+                </fieldset>
+                <div class="order-ticket__preloader-wrapper">
+                    <video loop muted autoplay playsinline src="./img/1.mp4" type="video/mp4"></video>
+                </div>
+                <fieldset class="order-ticket__thanks-wrapper">
+                    <legend>Спасибо, <span class="order-ticket__thanks-name">-имя-</span></legend>
+                    <p>Данная форма уведомляет Вас о успешной отправке ваших данных</p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
