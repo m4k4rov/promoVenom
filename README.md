@@ -1,5 +1,5 @@
 
-![Alt-текст](https://m4k4rov.github.io/promoVenom//img/logo.png) 
+[![Venom](https://m4k4rov.github.io/promoVenom//img/logo.png)](https://m4k4rov.github.io/promoVenom/)
 # Промо-страница фильма Venom-2
 
 
