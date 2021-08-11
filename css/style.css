@@ -93,7 +93,7 @@
 .blood {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 0;
     z-index: -1;
 }
 .blood-ab {
@@ -203,12 +203,18 @@
 .blood-poster {
     width: 350px;
 }
+.bloodBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
 @media (max-width: 768px) {
     body {
         background: #14131a;
-    }
-    .blood {
-        right: 0;
     }
     .venom {
         top: 13%;
@@ -347,7 +353,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: fixed;
-    bottom: -100vh;    
+    bottom: -100vh;
     right: 60px;
     width: 320px;
     max-height: 100vh;
@@ -359,7 +365,7 @@
     bottom: 0 !important;
 }
 .hide-form a {
-    color:inherit;
+    color: inherit;
     font-style: italic;
 }
 .order-ticket {
@@ -372,15 +378,15 @@
     height: 30px;
     display: block;
     margin-left: auto;
-    background-color: #B30303;
-    color: #EFE8F4;
-    cursor:pointer;
+    background-color: #b30303;
+    color: #efe8f4;
+    cursor: pointer;
     padding: 0 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .order-trigger:hover {
-    background-color: #4081AF;
+    background-color: #4081af;
 }
 .order-ticket__form-wrapper {
     display: -webkit-box;
@@ -419,19 +425,19 @@
     width: 100%;
     height: 35px;
     background-color: transparent;
-    border: 1px solid #EFE8F4;
-    color: #EFE8F4;
+    border: 1px solid #efe8f4;
+    color: #efe8f4;
 }
 .order-ticket__label-focus .order-ticket__label-text,
 .order-ticket__input:focus + .order-ticket__label-text,
 .order-ticket__input:active + .order-ticket__label-text {
     top: 0;
-    border-color: #4081AF;
+    border-color: #4081af;
 }
 .order-ticket__label-focus .order-ticket__input,
 .order-ticket__input:active,
 .order-ticket__input:focus {
-    border-color: #4081AF;
+    border-color: #4081af;
     outline: none;
 }
 .order-ticket__preloader-wrapper {
